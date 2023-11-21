@@ -1,0 +1,57 @@
+.header {
+    padding-top: 44px;
+}
+
+.header__container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 236px;
+
+}
+
+.header__list {
+    display: flex;
+    gap: 33px;
+}
+
+.header__pages {
+    color: #83888F;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+
+}
+
+.header__bar {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .header {
+        padding-top: 32px;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__bar {
+        display: inline-block;
+        align-items: center;
+    }
+}
